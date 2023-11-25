@@ -12,7 +12,6 @@ import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
 
 import * as config from '@/lib/config'
 import { footerLinks } from '@/lib/config'
-import { mapPageUrl } from '@/lib/map-page-url'
 import { useDarkMode } from '@/lib/use-dark-mode'
 
 import styles from './styles.module.css'
