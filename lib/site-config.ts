@@ -33,11 +33,18 @@ export interface SiteConfig {
 
   navigationStyle?: types.NavigationStyle
   navigationLinks?: Array<NavigationLink>
+  footerNavigation?: Array<FooterNavigationLink>
 }
 
 export interface NavigationLink {
   title: string
   pageId?: string
+  url?: string
+}
+
+export interface FooterNavigationLink {
+  title: string,
+  pageId?: string,
   url?: string
 }
 

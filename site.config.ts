@@ -54,12 +54,15 @@ export default siteConfig({
   navigationStyle: 'custom',
   navigationLinks: [
     {
-      title: 'Leagal Notice',
-      pageId: '4a0612a81f474efa82d4d269fad54e69'
-    },
-    {
       title: 'Projects',
       pageId: '5efb1dc9ca404e27b65b92240cf9c78c'
     }
+  ],
+  footerNavigation: [
+    {
+      title: 'Legal Notice',
+      pageId: '4a0612a81f474efa82d4d269fad54e69'
+    },
   ]
+  
 })

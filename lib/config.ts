@@ -8,7 +8,7 @@ import { parsePageId } from 'notion-utils'
 import { PostHogConfig } from 'posthog-js'
 
 import { getEnv, getSiteConfig } from './get-config-value'
-import { NavigationLink } from './site-config'
+import { FooterNavigationLink, NavigationLink } from './site-config'
 import {
   NavigationStyle,
   PageUrlOverridesInverseMap,
@@ -106,6 +106,11 @@ export const navigationStyle: NavigationStyle = getSiteConfig(
 
 export const navigationLinks: Array<NavigationLink | null> = getSiteConfig(
   'navigationLinks',
+  null
+)
+
+export const footerLinks: Array<FooterNavigationLink> | null = getSiteConfig(
+  'footerNavigation',
   null
 )
 
