@@ -61,8 +61,8 @@ export default siteConfig({
   footerNavigation: [
     {
       title: 'Legal Notice',
-      pageId: '4a0612a81f474efa82d4d269fad54e69'
-    },
+      pageId: '4a0612a81f474efa82d4d269fad54e69',
+      url: '/legal-notice'
+    }
   ]
-  
 })

@@ -10,20 +10,22 @@ import { FaZhihu } from '@react-icons/all-files/fa/FaZhihu'
 import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
 import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
 
-import { footerLinks } from '@/lib/config'
-
 import * as config from '@/lib/config'
+import { footerLinks } from '@/lib/config'
+import { mapPageUrl } from '@/lib/map-page-url'
 import { useDarkMode } from '@/lib/use-dark-mode'
 
 import styles from './styles.module.css'
 
 // TODO: merge the data and icons from PageSocial with the social links in Footer
 
+const createLink = () => {}
+
 export const FooterImpl: React.FC = () => {
   const [hasMounted, setHasMounted] = React.useState(false)
   const { isDarkMode, toggleDarkMode } = useDarkMode()
 
-  const year = new Date().getFullYear().toString();
+  const year = new Date().getFullYear().toString()
 
   const onToggleDarkMode = React.useCallback(
     (e) => {
@@ -38,17 +40,16 @@ export const FooterImpl: React.FC = () => {
   }, [])
 
   const footernav = footerLinks.map((nav) => (
-      <>
-      | {" "}
-      <a href={nav.url}>{nav.title}</a>       
-      </>  
-))
+    <>
+      {' '}
+      | <a href={nav.url}>{nav.title}</a>
+    </>
+  ))
 
   return (
     <footer className={styles.footer}>
       <div className={styles.copyright}>
-        Copyright {year} {config.author} - 
-        {footernav}
+        Copyright {year} {config.author} -{footernav}
       </div>
 
       <div className={styles.settings}>
