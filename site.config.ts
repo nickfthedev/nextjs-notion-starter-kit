@@ -58,11 +58,12 @@ export default siteConfig({
       pageId: '5efb1dc9ca404e27b65b92240cf9c78c'
     }
   ],
-  footerNavigation: [
-    {
-      title: 'Legal Notice',
-      pageId: '4a0612a81f474efa82d4d269fad54e69',
-      url: '/legal-notice'
-    }
-  ]
+  footerNavigation: [],
+  // footerNavigation: [
+  //   {
+  //     title: 'Legal Notice',
+  //     pageId: '4a0612a81f474efa82d4d269fad54e69',
+  //     url: '/legal-notice'
+  //   }
+  // ]
 })
